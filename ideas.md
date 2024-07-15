@@ -9,6 +9,10 @@ this is a youtuber that has a pretty good nvim config and might be worth taking 
 
 - let me use apostraphies in comments
 
+- make unique settings for text files.
+
+
+
 ## Problems
 fix python libraries not working with the debugger
 
