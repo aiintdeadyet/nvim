@@ -11,7 +11,7 @@ this is a youtuber that has a pretty good nvim config and might be worth taking 
 
 - make unique settings for text files.
 
-
+- make it so that I can open tabs with telescope
 
 ## Problems
 fix python libraries not working with the debugger
