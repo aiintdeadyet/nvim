@@ -17,4 +17,5 @@ vim.g.mapleader = " " -- leader remap needs to be done before loading lazy and o
 require("lazy").setup("plugins")
 require("settings") -- settings
 require("remaps") -- remaping 
+require("filetypes") -- filetype spesific settings
 
