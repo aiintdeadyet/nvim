@@ -11,6 +11,8 @@ this is a youtuber that has a pretty good nvim config and might be worth taking 
 
 - make it so that I can open tabs with telescope
 
+- make file manager open to the directory of the current file 
+
 ## Problems
 fix python libraries not working with the debugger
 
