@@ -13,6 +13,8 @@ this is a youtuber that has a pretty good nvim config and might be worth taking 
 
 - make file manager open to the directory of the current file 
 
+- move file spesific settings to somewhere that makes a little more sence 
+
 ## Problems
 fix python libraries not working with the debugger
 
