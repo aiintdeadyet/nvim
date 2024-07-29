@@ -20,6 +20,8 @@ _**For pluggin ideas look at https://dotfyle.com/**_
 
 - try using registers for copy past
 
+- set neovim up to debug lua
+
 ## Problems
 fix python libraries not working with the debugger
 
