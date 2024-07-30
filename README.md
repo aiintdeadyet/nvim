@@ -68,4 +68,8 @@ return {
 
 ### Some things may not install by default. 
 
+add note about needing luarocks and luafilesystem
+
+add note about needing local-lua-debuger-vscode (maybe)
+
 Currently have problems with mason not installing everything it should be by default. This can be solved by opening neovim, typing the ``:Mason``comand and searching for the packages you need then installing them with ``:MasonInstall. ``
