@@ -20,6 +20,8 @@ _**For pluggin ideas look at https://dotfyle.com/**_
 
 - refine lua debuging experience 
 
+- Make a setup script
+
 ## Problems
 fix python libraries not working with the debugger
 
