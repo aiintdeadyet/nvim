@@ -25,4 +25,3 @@ vim.cmd.set("showmode") -- show what mode you are in
 vim.cmd.set("showmatch") -- show matching words during a search
 vim.cmd.set("hlsearch") -- use highlighting when during a search
 
-
