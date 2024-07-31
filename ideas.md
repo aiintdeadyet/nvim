@@ -18,9 +18,7 @@ _**For pluggin ideas look at https://dotfyle.com/**_
 
 - try neoformat pluggin
 
-- try using registers for copy past
-
-- set neovim up to debug lua
+- refine lua debuging experience 
 
 ## Problems
 fix python libraries not working with the debugger
