@@ -31,7 +31,7 @@ github.com/theHamsta/nvim-dap-virtual-text
 github.com/mg979/vim-visual-multi
 ```
 ## Dependencies and their instalation 
-xsel ```sudo apt installl xsel```
+xsel ```sudo apt install xsel```
 
 ripgrep ```brew install ripgrep```
 
