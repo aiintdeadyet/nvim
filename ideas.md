@@ -22,6 +22,8 @@ _**For pluggin ideas look at https://dotfyle.com/**_
 
 - Make a setup script
 
+- Make a uninstall script
+
 ## Problems
 fix python libraries not working with the debugger
 

@@ -2,19 +2,40 @@
 
 # install dependencies 
 
-# xsel
-sudo apt install xsel
+general-dependencies() {
+	# xsel
+	sudo apt install xsel
+	# ripgrep
+	brew install ripgrep
+}
 
-# ripgrep
-brew install ripgrep
 
-# luarocks
-sudo apt install luarocks
+lua-packages() {
+	# luarocks
+	sudo apt install luarocks
+	# luafilesystem
+	sudo luarocks install luafilesystem
+}
 
-# luafilesystem
-sudo luarocks install luafilesystem
 
-# local-lua-debuger-vscode
+lua-debug() {
+	# local-lua-debuger-vscode
+	sudo apt install npm
+	cd /usr/lib/node_modules/
+	git clone https://github.com/tomblind/local-lua-debugger-vscode
+	cd local-lua-debugger-vscode
+	npm install
+	npm run build
+}
 
 
 # install Mason packages
+
+
+
+main() {
+	lua-debug
+}
+
+
+main "$@"
