@@ -25,5 +25,6 @@ _**For pluggin ideas look at https://dotfyle.com/**_
 - Make a uninstall script
 
 ## Problems
-fix python libraries not working with the debugger
 
+### fix python libraries not working with the debugger
+- when i creage a .vscode/launch.json file it will work. 
