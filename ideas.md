@@ -26,6 +26,4 @@ _**For pluggin ideas look at https://dotfyle.com/**_
 
 ## Problems
 
-### fix python libraries not working with the debugger
-this is now fixed but needs to be made prettyer
 
