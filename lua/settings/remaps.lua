@@ -1,10 +1,14 @@
 -- map leader is set in init.lua to prevent an error
+vim.keymap.set("n", "<leader>y", '"+y') -- remap yank to system clipboard
+vim.keymap.set("n", "<leader>p", '"+p') -- past from system clipboard
+vim.keymap.set("n", "<leader>d", '"+d') -- remap cut to system clipboard
 
 -- file management
 -- vim.keymap.set("n", "<leader>fv", vim.cmd.Ex, {}) -- opens nvims default file exporer (netRW)
 vim.keymap.set("n", "<leader>fv", ":Neotree toggle<CR>", {}) -- toggle neotree file exporer
 -- other neotree comments are in the neotree pluggins file
 
+-- vim.keymap.set("n", "<leader>fv", vim.cmd.Ex, {}) -- opens nvims default file exporer (netRW)
 -- telescope
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
