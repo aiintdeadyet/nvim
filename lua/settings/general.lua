@@ -1,12 +1,12 @@
 -- general
 vim.cmd.set("number relativenumber") -- line numbering
 vim.cmd.set("cursorline") -- highlite the current line the cursor is on
--- vim.cmd.set("nowrap") -- set lines not to wrap
+vim.cmd.set("nowrap") -- set lines not to wrap (need to figureout how to not do this on text files)
 vim.cmd.set("nobackup") -- don't save backup files 
 -- vim.cmd.set("clipboard+=unnamedplus") -- got rid of this to use "+p
 vim.cmd.set("scrolloff=12") -- used to set how close the cursor can get to the end of the screen
 -- vim.cmd("filetype on")
-
+-- vim.cmd.set("spell spelllang=en_us")
 
 
 -- makeing it so that I can use lua libraries 
