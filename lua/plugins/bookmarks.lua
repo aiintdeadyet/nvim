@@ -8,14 +8,7 @@ return {
 	},
 	config = function ()
 		require("bookmarks").setup({
-			-- json_db_path = vim.fs.normalize(vim.fn.stdpath("config") .. "/bookmarks.db.json"),
-<<<<<<< HEAD
-			-- json_db_path = "~/.cache/nvim/bookmarks.db.json"
-			json_db_path = vim.fs.normalize(vim.fn.stdpath("cache") .. "/bookmarks.db.json"),
-=======
-				-- json_db_path = "~/.cache/nvim/bookmarks.db.json"
 			json_db_path = vim.fs.normalize(vim.fn.stdpath("cache") .. "/bookmarks.db.json"), -- for some reason this line isn't working on my laptop
->>>>>>> 0e0622ff8071a4b11ce6a2fa54c49386febab5a5
 			}
 		)
 	end
