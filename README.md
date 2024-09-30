@@ -63,6 +63,11 @@ return {
 
 ## Comon Problems
 
+#### mason won't install python-lsp-server
+
+This problem can be fixed by installing venv for the python version you want.
+` sudo apt install python3.11-venv `
+
 #### nvim can't find standard library headers.
 
 https://stackoverflow.com/questions/74785927/clangd-doesnt-recognize-standard-headers
