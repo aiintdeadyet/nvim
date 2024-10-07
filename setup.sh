@@ -5,6 +5,8 @@
 general-dependencies() {
 	# xsel
 	sudo apt install xsel
+	# for python-lsp-server integration
+	sudo apt install python3.11-venv
 	# ripgrep
 	brew install ripgrep
 }
