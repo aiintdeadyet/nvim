@@ -8,8 +8,6 @@ _**For pluggin ideas look at https://dotfyle.com/**_
 
 - let me use apostraphies in comments
 
-- make it so that I can open tabs with telescope
-
 - make file manager open to the directory of the current file 
 
 - try neoformat pluggin
