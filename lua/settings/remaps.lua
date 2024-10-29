@@ -1,12 +1,12 @@
 
 -- general
 -- map leader is set in init.lua to prevent an error
-vim.keymap.set("n", "<leader>y",  '"+y') -- remap yank to system clipboard
-vim.keymap.set("n", "<leader>p",  '"+p') -- past from system clipboard
-vim.keymap.set("n", "<leader>d",  '"+d') -- remap cut to system clipboard
-vim.keymap.set("v", "<leader>yy", '"+y') -- remap yank to system clipboard
-vim.keymap.set("v", "<leader>p",  '"+p') -- past from system clipboard
-vim.keymap.set("v", "<leader>dd", '"+d') -- remap cut to system clipboard
+vim.keymap.set("n", "<leader>y", '"+y') -- remap yank to system clipboard
+vim.keymap.set("n", "<leader>p", '"+p') -- past from system clipboard
+vim.keymap.set("n", "<leader>d", '"+d') -- remap cut to system clipboard
+vim.keymap.set("v", "<leader>y", '"+y') -- remap yank to system clipboard
+vim.keymap.set("v", "<leader>p", '"+p') -- past from system clipboard
+vim.keymap.set("v", "<leader>d", '"+d') -- remap cut to system clipboard
 
 -- file management
 -- vim.keymap.set("n", "<leader>fv", vim.cmd.Ex, {}) -- opens nvims default file exporer (netRW)
