@@ -76,3 +76,19 @@ dap.configurations.cpp = {
 		runInTerminal = true,
 	}
 }
+
+dap.configurations.c = {
+	{
+		name = "Custom",
+		type = "codelldb",
+		request = "launch",
+		program = function ()
+			vim.cmd(':silent exec "!make debug"') -- silently run make
+			return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+		end,
+		cwd = "${workspaceFolder}",
+		stopOnEntry = false,
+		args = {},
+		runInTerminal = true,
+	}
+}
