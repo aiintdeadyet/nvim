@@ -31,10 +31,10 @@ vim.keymap.set('n', "<F5>", function()
 		-- now trying to figure out a way to do this through json or dap configs
 	end
 	-- open debuger if not already open
-	ui.open()
+	-- ui.open()
 	-- call nvim.dap continue()
 	dap.continue()
-	ui.close()
+	-- ui.close()
 end)
 vim.keymap.set('n', "<F10>", dap.step_over, {})
 vim.keymap.set('n', "<F11>", dap.step_into, {}) -- this one has problems (<F11> will full screen the window instead of stepping into)
