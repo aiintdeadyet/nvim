@@ -1,6 +1,8 @@
 
 local lspconfig = require('lspconfig')
 
+-- python------------------------------------------------------------------------------------------
+
 lspconfig.pyright.setup {
 	settings = {
 		python = {
@@ -10,11 +12,25 @@ lspconfig.pyright.setup {
 				diagnosticMode = "workspace", -- openFilesOnly, workspace
 				typeCheckingMode = "basic", -- off, basic, strict
 				useLibraryCodeForTypes = true,
-
 			}
 		}
 	}
 }
+
+lspconfig.pylsp.setup {
+	settings = {
+		pylsp = {
+			plugins = {
+				pycodestyle = {
+					enabled = true,
+					ignore = {"E261"},
+				},
+			}
+		}
+	}
+}
+
+-- C/C++-------------------------------------------------------------------------------------------
 
 lspconfig.clangd.setup {
 	capabilities = cmp,
