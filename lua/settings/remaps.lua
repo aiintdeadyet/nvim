@@ -45,6 +45,8 @@ vim.keymap.set('n', '<leader>bp', dap.toggle_breakpoint, {})
 vim.keymap.set('n', '<leader>Bp', ":lua require'dap'.set_breakpoint(vim.fn.input('Breakpoint condition: '))<CR>") -- i don't like the way these lines are written
 vim.keymap.set('n', '<leader>lp', ":lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>") -- this line needs changed to
 vim.keymap.set('n', "<leader>dr", dap.repl.toggle, {})
+vim.keymap.set('n', '<leader>gl', ":lua vim.diagnostic.open_float()<CR>")
+
 -- dap ui
 vim.keymap.set('n', '<leader>db', ui.toggle)
 -- vim.keymap.set('n', '<leader>db', ":lua require('dapui').toggle()<CR>")
