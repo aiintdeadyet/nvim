@@ -1,5 +1,5 @@
 -- nvim dap (debugger addaper protocall)
-return { 
+return {
 	'mfussenegger/nvim-dap',
 }
 

@@ -15,6 +15,5 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " " -- leader remap needs to be done before loading lazy and other remaps need to be done after loading lazy
 
 require("lazy").setup("plugins")
-require("settings") -- settings
-require("remaps") -- remaping 
+require("settings") -- filetype spesific settings
 

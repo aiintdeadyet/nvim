@@ -11,6 +11,8 @@ git clone git@github.com:aiintdeadyet/nvim.git
 ```
 Then run `neovim`.
 
+_An actuall install script is on it's way but it is still very much a work in progress._
+
 ## Included plugins
 ```
 github.com/nvim-telescope/telescope-dap.nvim
@@ -31,7 +33,7 @@ github.com/theHamsta/nvim-dap-virtual-text
 github.com/mg979/vim-visual-multi
 ```
 ## Dependencies and their instalation 
-xsel ```sudo apt installl xsel```
+xsel ```sudo apt install xsel```
 
 ripgrep ```brew install ripgrep```
 
@@ -61,11 +63,24 @@ return {
 
 ## Comon Problems
 
-<!-- ### nvim can't find standard library headers. -->
-<!--  -->
-<!-- https://stackoverflow.com/questions/74785927/clangd-doesnt-recognize-standard-headers -->
-<!-- You can read more about it in the link above but to be brief it is a problem with clangd looking for the latest libstdc++ and not being able to find it. To fix this type ``apt search libstdc`` to find the latest version then install it through apt. At the current time this would look something like ``sudo apt install libstdc++-12-dev``. -->
+#### mason won't install python-lsp-server
+
+This problem can be fixed by installing venv for the python version you want.
+` sudo apt install python3.11-venv `
+
+#### nvim can't find standard library headers.
+
+https://stackoverflow.com/questions/74785927/clangd-doesnt-recognize-standard-headers
+
+You can read more about it in the link above but to be brief it is a problem with clangd looking for the latest libstdc++ and not being able to find it. To fix this type ``apt search libstdc`` to find the latest version then install it through apt. At the current time this would look something like ``sudo apt install libstdc++-12-dev``.
+
+#### When running python from within neovim it won't pick up the librarries installed through pip. 
+**Fix:** Don't install debugpy through mason. For some dumb reason it won't pickup the pip librarries. An actuall fix will come in the future but for now this is what we got.
 
 ### Some things may not install by default. 
 
-Currently have problems with mason not installing everything it should be by default. This can be solved by opening neovim, typing the ``:Mason``comand and searching for the packages you need then installing them with ``:MasonInstall. ``
+add note about needing luarocks and luafilesystem
+
+add note about needing local-lua-debuger-vscode (maybe)
+
+Currently have problems with mason not installing everything it should be by default. This can be solved by opening neovim, typing the ``:Mason``comand and searching for the packages you need then installing them with ``:MasonInstall``.

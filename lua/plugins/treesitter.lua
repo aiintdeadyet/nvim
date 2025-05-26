@@ -34,6 +34,7 @@ return {
 			"python",
 			"query",
 			"regex",
+			"rust",
 			"tsx",
 			"typescript",
 			"vim",
