@@ -1,4 +1,8 @@
--- setup lazynvim
+
+
+vim.g.mapleader = " "
+
+-- plugin manager (lazy vim)
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -11,8 +15,7 @@ if not vim.loop.fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(lazypath)
-
-vim.g.mapleader = " " -- leader remap needs to be done before loading lazy and other remaps need to be done after loading lazy
-
 require("lazy").setup("plugins")
-require("settings") -- filetype spesific settings
+
+-- load settings
+require("settings")
