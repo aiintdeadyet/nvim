@@ -5,7 +5,10 @@ return { -- auto close brackets
 		require("autoclose").setup({
 			options = {
 				disable_when_touch = true,
-			}
+			},
+			keys = {
+				["'"] = {disabled_filetypes = {"text", "markdown"}}
+			},
 		})
 	end
 }
